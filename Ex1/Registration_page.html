@@ -1,0 +1,57 @@
+<!-- Excersize 1:
+> Create reg form with first name, last name, email id, phone number, psw, confirm psw and then button 
+> Succusful reg msg
+> login screen -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Mulish:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Register.css">
+	<script type="text/javascript" src="Register.js"></script>
+</head>
+<body>
+<form class= "Form_container" onsubmit="return verifyPassword()" action="Successful.html">
+  <h1>REGISTER FORM</h1>
+
+  <div class="register-container">
+  	<i class="fa fa-user icon"></i>
+    <input class="input-field" type="text"  id="F_name" placeholder="First name" name="F_name" required pattern="[A-Za-z ]{1,32}"> 
+    <input class="input-field" type="text" id="L_name" placeholder="Last name" name="L_name" required pattern="[A-Za-z ]{1,32}">
+  </div>
+
+<br>
+  <div class="register-container">
+  	  <i class="fa fa-envelope icon"></i>
+    <input class="input-field" id="email" type="text" placeholder="Email" name="email" required>
+  </div>
+  <br>
+
+   <div class="register-container">
+   	<i class="fa fa-phone icon"></i>
+    <input class="input-field" id="phone_no" type="text" placeholder="Phone number" name="phone_no" required pattern="[0-9]{10}">
+  </div>
+<br>
+
+   <div class="register-container">
+   	<i class="fa fa-key icon"></i>
+    <input class="input-field" id="pwd" type="password" placeholder="Password" name="pwd" >
+  </div>
+<br>
+
+  <div class="register-container">
+   <i class="fa fa-key icon"></i>
+    <input class="input-field" id="confirm_pwd" type="password" placeholder="Confirm password" name="confirm_pwd" >
+  </div>
+  <p>By creating an account you agree to our Terms & Privacy.</p>
+<span id = "message" style="color:red;font-weight:bold;background: white;border-radius: 2px;"></span>
+<br>
+<br>
+  <button type="submit" class="register_btn" id="submit_btn" name="submit_btn" >Register</button>
+  <p>Already have an account? <a href="#">Sign in</a></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body 
+{
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+h1{
+  color: aliceblue;
+  font-family: monospace;
+}
+h2,h4{
+  color: white;
+}
+h2{
+  font-family: monospace;
+  font-size: 50px;
+}
+.Form_container{
+  margin-top: 200px;
+  display:inline-block;
+  text-align:center;
+  padding:10px;
+  }
+
+.register-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.register_btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 8px;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+p{
+  color: white;
+  font-size: 15px;
+}
